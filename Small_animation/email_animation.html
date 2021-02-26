@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background: #333;
+        }
+        .container{
+            background: url("background.jpg") no-repeat center;
+            background-size: cover;
+            padding: 100px 40px;
+            text-align: center;
+            color: white;
+        }
+        .container p{
+            max-width: 600px;
+            margin: 40px auto;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .email-box{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .email-box i{
+            background: #2f3542;
+            width: 40px;
+            line-height: 40px;
+        }
+        .tbox,.btn{
+            border: none;
+            outline: none;
+        }
+        .tbox{
+            width:0px;
+            transition: 0.6s;
+        }
+        .email-box:hover >.tbox,.btn:focus{
+            width: 260px;
+            padding: 0 10px;
+        }
+        .btn{
+            background: #2f3542;
+            color: white;
+            padding: 0 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Join Our Newsletter</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolore blanditiis iusto sit recusandae quos expedita rem? Porro doloremque corrupti, quam, possimus debitis explicabo voluptatem officia quisquam quidem expedita officiis.</p>
+            <div class="email-box">
+                <i class="fas fa-envelope"></i>
+                <input class="tbox" type="email" name="" value="" placeholder="Enter Your Email">
+                <button class="btn" type="button" name="button">Subscribe</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
